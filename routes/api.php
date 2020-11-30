@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,5 +19,5 @@ Route::post('signup', [AuthController::class, 'signup']);
 Route::post('signin', [AuthController::class, 'signin']);
 
 Route::middleware('auth:api')->group(function () {
-    //
+    Route::put('users/me', [UserController::class, 'updateMe']);
 });
