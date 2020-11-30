@@ -3,7 +3,9 @@
 namespace App\Providers;
 
 use App\Contracts\SwapiApiContract;
+use App\Contracts\SwapiCacheContract;
 use App\Swapi\SwapiApi;
+use App\Swapi\SwapiCacheDBDriver;
 use GuzzleHttp\Client;
 use Illuminate\Support\ServiceProvider;
 
@@ -17,6 +19,10 @@ class SwapiServiceProvider extends ServiceProvider
             ]);
 
             return new SwapiApi($httpClient);
+        });
+
+        $this->app->singleton(SwapiCacheContract::class, function () {
+            return new SwapiCacheDBDriver(config('swapi.cache_time'));
         });
     }
 }

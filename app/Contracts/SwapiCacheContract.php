@@ -4,6 +4,6 @@ namespace App\Contracts;
 
 interface SwapiCacheContract
 {
-    public function set($url, $data);
-    public function get($url);
+    public function set($key, $value);
+    public function get($key);
 }

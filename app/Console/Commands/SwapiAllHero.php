@@ -5,7 +5,7 @@ namespace App\Console\Commands;
 use App\Contracts\SwapiApiContract;
 use Illuminate\Console\Command;
 
-class SwapiAllSwapi extends Command
+class SwapiAllHero extends Command
 {
     protected $signature = 'swapi:all-Swapis
                             {--page= : Strona do pobrania}';
