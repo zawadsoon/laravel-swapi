@@ -23,7 +23,7 @@ class SwapiPlanet extends Command
 
     public function handle()
     {
-        $response = $this->api->fetchPlanetsById($this->argument('id'));
+        $response = $this->api->fetchPlanetById($this->argument('id'));
 
         $content = $response->getBody()->getContents();
         $result = json_decode($content);

@@ -8,9 +8,10 @@
 [ ] pick one random hero from api at registration
 [ ] all other resource must require authorization
 [ ] update user - should change email address   
-[ ] films/ species/ vehicles/ starships/ planets/ resources
-[ ] user can also load resources by specific id (verify if resource belongs to hero)
-[ ] cache interface and cache implementation (should cache every resource from SW for 24 Hours)
+[x] films/ species/ vehicles/ starships/ planets/ resources
+[x] user can also load resources by specific id 
+[x] verify if resource belongs to hero
+[x] cache interface and cache implementation (should cache every resource from SW for 24 Hours)
 [ ] Add console command that list user with assigned hero
 [ ] Make endpoints documentation 
 [ ] Run local environment with Docker Compose (wtf is that?)

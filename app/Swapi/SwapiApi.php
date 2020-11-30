@@ -49,7 +49,7 @@ class SwapiApi implements SwapiApiContract
         return $this->httpClient->request('GET', "api/starships/{$id}/");
     }
 
-    public function fetchPlanetsById($id): ResponseInterface
+    public function fetchPlanetById($id): ResponseInterface
     {
         return $this->httpClient->request('GET', "api/planets/{$id}/");
     }

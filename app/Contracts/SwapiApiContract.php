@@ -11,6 +11,6 @@ interface SwapiApiContract
     public function fetchSpeciesById($id): ResponseInterface;
     public function fetchVehicleById($id): ResponseInterface;
     public function fetchStarShipById($id): ResponseInterface;
-    public function fetchPlanetsById($id): ResponseInterface;
+    public function fetchPlanetById($id): ResponseInterface;
     public function fetchFilmById($id): ResponseInterface;
 }
