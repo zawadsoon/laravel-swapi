@@ -3,7 +3,7 @@
 [x] make git repo, clear commits (squash and rebase)
 [x] use https://swapi.dev 
 [x] setup laravel with api
-[ ] do sign up with registration with email and password to create account
+[x] do sign up with registration with email and password to create account
 [ ] pick one random hero from api at registration
 [ ] sign in with credentials provided during registration
 [ ] all other resource must require authorization
