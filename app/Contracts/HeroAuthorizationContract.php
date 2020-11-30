@@ -8,4 +8,5 @@ interface HeroAuthorizationContract
     public function hasSpecies($hero, $speciesId): bool;
     public function hasStarShip($hero, $starShipId): bool;
     public function hasPlanet($hero, $starShipId): bool;
+    public function hasFilm($hero, $filmId): bool;
 }

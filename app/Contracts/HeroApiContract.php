@@ -9,4 +9,5 @@ interface HeroApiContract
     public function getVehicleById($id);
     public function getStarShipsById($id);
     public function getPlanetsById($id);
+    public function getFilmById($id);
 }
