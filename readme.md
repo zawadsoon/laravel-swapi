@@ -5,10 +5,10 @@
 [x] setup laravel with api
 [x] do sign up with registration with email and password to create account
 [x] sign in with credentials provided during registration
-[ ] pick one random hero from api at registration
+[x] pick one random hero from api at registration
 [ ] all other resource must require authorization
 [ ] update user - should change email address   
-[x] films/ species/ vehicles/ starships/ planets/ resources
+[ ] films/ species/ vehicles/ starships/ planets/ resources
 [x] user can also load resources by specific id 
 [x] verify if resource belongs to hero
 [x] cache interface and cache implementation (should cache every resource from SW for 24 Hours)
