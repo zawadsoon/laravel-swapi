@@ -2,7 +2,7 @@
 
 namespace App\Contracts;
 
-interface HeroCacheContract
+interface SwapiCacheContract
 {
     public function set($url, $data);
     public function get($url);
