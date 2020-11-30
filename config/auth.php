@@ -14,7 +14,7 @@ return [
     */
 
     'defaults' => [
-        'guard' => 'web',
+        'guard' => 'api',
         'passwords' => 'users',
     ],
 
@@ -36,15 +36,9 @@ return [
     */
 
     'guards' => [
-        'web' => [
-            'driver' => 'session',
-            'provider' => 'users',
-        ],
-
         'api' => [
-            'driver' => 'token',
+            'driver' => 'passport',
             'provider' => 'users',
-            'hash' => false,
         ],
     ],
 
@@ -113,5 +107,19 @@ return [
     */
 
     'password_timeout' => 10800,
+
+    /*
+    |--------------------------------------------------------------------------
+    | Passport defaults
+    |--------------------------------------------------------------------------
+    |
+    | Here you can define keys that will be used for passport authorization
+    |
+    */
+
+    'passport' => [
+        'client_id' => env('PASSPORT_CLIENT_ID', null),
+        'client_secret' => env('PASSPORT_CLIENT_SECRET', null),
+    ]
 
 ];

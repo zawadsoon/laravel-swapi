@@ -19,12 +19,10 @@ class SignUpTest extends TestCase
         $password = Str::random(8);
         $email = User::factory()->make()->email;
 
-        $response = $this->json('get', 'api/signup', [
+        $this->json('post', 'api/signup', [
             'email' => $email,
             'password' => $password
-        ]);
-
-        $response->assertStatus(201);
+        ])->assertStatus(201);
 
         $this->assertDatabaseHas('users', ['email' => $email]);
 

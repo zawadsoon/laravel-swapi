@@ -4,8 +4,8 @@
 [x] use https://swapi.dev 
 [x] setup laravel with api
 [x] do sign up with registration with email and password to create account
+[x] sign in with credentials provided during registration
 [ ] pick one random hero from api at registration
-[ ] sign in with credentials provided during registration
 [ ] all other resource must require authorization
 [ ] update user - should change email address   
 [ ] films/ species/ vehicles/ starships/ planets/ resources
