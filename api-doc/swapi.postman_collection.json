@@ -1,0 +1,501 @@
+{
+	"info": {
+		"_postman_id": "f1e3afa4-92ad-45b1-9d45-61c28ac387ef",
+		"name": "Swapi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "api/signup",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "marcin@swapi.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8010/api/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "8010",
+					"path": [
+						"api",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/signin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "marcin@swapi.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8010/api/signin",
+					"host": [
+						"localhost"
+					],
+					"port": "8010",
+					"path": [
+						"api",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/users/me",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMzhlZWQxM2ZkZGQ0MmY2ZjUzNTA0MTQ4YTUyY2QwODE5M2JiNzlmNTU2ZjY1OWVkODlmZDUxZDFiZDE4Njk3NDcxMDI1OTMzM2Y1YTNhNDAiLCJpYXQiOiIxNjA2NzgzMDE2LjcwODYxNSIsIm5iZiI6IjE2MDY3ODMwMTYuNzA4NjE4IiwiZXhwIjoiMTYzODMxOTAxNi42OTkyMDMiLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.LJ5UQfRkD1lBiQnwrVDc3p01t9R4aSKwfub4HoUi5xfcN6AkVV-1VLLtRpU9n0aDDRoTTqi87K7Eibsp0wP0dEvqUXcXefc1PWWb7jtu-LS7Ahmb6mgzZHm4sGQ5uVv1hAb9jxs-iqtNWTLUVwBxBjwUVPOwu8sGN9pdu929vBOyUWB8aUyasMe0yvkwal2YZJpGrMPixds0QbPq900mwzMl7Rit1Si3g1f1DyZUXwzb3mIeHac-Ia-nVOan65ZXc7GAnh3Po9hGnHI_weFMDMckEUK6yrmlx8HAKLiCB2sDDlduuEN79EJT7_eU3km564sMq-YuM1VyXc5t8VAG7zzAAEjFjCk0_LyjNTH7xVj1u5F5KoyIP8p5-Xbdm_em49xqHshkKOn4fiMRHy-8PvEtHL7cB20OcaZUN8YtZIheA6je5H0z-CiX3kktfbMOCnuaKsgnb6oGATvD3LfvBfCdrNPmMQ5j6trel6WTqrJorL0SxSUbrjPRBfx152QDaTE1HBlR5_0xpxj7i2nqIyGsQGoi6N1GwpZZkJppigJT-ohD7QdBhBVQoeDcNJe2OFthL9rvzgeiu_roe3682ovwRmwL0iFHxZzxzO6fRZ5SSAq1OGnGhEpUeBJzSuGK-QyCKQZyYeyCK1hjbeuxNfILRMLRj0BvRX7dDct5uCo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "X-Requested-With",
+						"type": "text",
+						"value": "XMLHttpRequest"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "marcin@swapi.pl",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8010/api/users/me",
+					"host": [
+						"localhost"
+					],
+					"port": "8010",
+					"path": [
+						"api",
+						"users",
+						"me"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/vehicles",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMzhlZWQxM2ZkZGQ0MmY2ZjUzNTA0MTQ4YTUyY2QwODE5M2JiNzlmNTU2ZjY1OWVkODlmZDUxZDFiZDE4Njk3NDcxMDI1OTMzM2Y1YTNhNDAiLCJpYXQiOiIxNjA2NzgzMDE2LjcwODYxNSIsIm5iZiI6IjE2MDY3ODMwMTYuNzA4NjE4IiwiZXhwIjoiMTYzODMxOTAxNi42OTkyMDMiLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.LJ5UQfRkD1lBiQnwrVDc3p01t9R4aSKwfub4HoUi5xfcN6AkVV-1VLLtRpU9n0aDDRoTTqi87K7Eibsp0wP0dEvqUXcXefc1PWWb7jtu-LS7Ahmb6mgzZHm4sGQ5uVv1hAb9jxs-iqtNWTLUVwBxBjwUVPOwu8sGN9pdu929vBOyUWB8aUyasMe0yvkwal2YZJpGrMPixds0QbPq900mwzMl7Rit1Si3g1f1DyZUXwzb3mIeHac-Ia-nVOan65ZXc7GAnh3Po9hGnHI_weFMDMckEUK6yrmlx8HAKLiCB2sDDlduuEN79EJT7_eU3km564sMq-YuM1VyXc5t8VAG7zzAAEjFjCk0_LyjNTH7xVj1u5F5KoyIP8p5-Xbdm_em49xqHshkKOn4fiMRHy-8PvEtHL7cB20OcaZUN8YtZIheA6je5H0z-CiX3kktfbMOCnuaKsgnb6oGATvD3LfvBfCdrNPmMQ5j6trel6WTqrJorL0SxSUbrjPRBfx152QDaTE1HBlR5_0xpxj7i2nqIyGsQGoi6N1GwpZZkJppigJT-ohD7QdBhBVQoeDcNJe2OFthL9rvzgeiu_roe3682ovwRmwL0iFHxZzxzO6fRZ5SSAq1OGnGhEpUeBJzSuGK-QyCKQZyYeyCK1hjbeuxNfILRMLRj0BvRX7dDct5uCo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8010/api/vehicles",
+					"host": [
+						"localhost"
+					],
+					"port": "8010",
+					"path": [
+						"api",
+						"vehicles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/vehicles/{id}",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMzhlZWQxM2ZkZGQ0MmY2ZjUzNTA0MTQ4YTUyY2QwODE5M2JiNzlmNTU2ZjY1OWVkODlmZDUxZDFiZDE4Njk3NDcxMDI1OTMzM2Y1YTNhNDAiLCJpYXQiOiIxNjA2NzgzMDE2LjcwODYxNSIsIm5iZiI6IjE2MDY3ODMwMTYuNzA4NjE4IiwiZXhwIjoiMTYzODMxOTAxNi42OTkyMDMiLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.LJ5UQfRkD1lBiQnwrVDc3p01t9R4aSKwfub4HoUi5xfcN6AkVV-1VLLtRpU9n0aDDRoTTqi87K7Eibsp0wP0dEvqUXcXefc1PWWb7jtu-LS7Ahmb6mgzZHm4sGQ5uVv1hAb9jxs-iqtNWTLUVwBxBjwUVPOwu8sGN9pdu929vBOyUWB8aUyasMe0yvkwal2YZJpGrMPixds0QbPq900mwzMl7Rit1Si3g1f1DyZUXwzb3mIeHac-Ia-nVOan65ZXc7GAnh3Po9hGnHI_weFMDMckEUK6yrmlx8HAKLiCB2sDDlduuEN79EJT7_eU3km564sMq-YuM1VyXc5t8VAG7zzAAEjFjCk0_LyjNTH7xVj1u5F5KoyIP8p5-Xbdm_em49xqHshkKOn4fiMRHy-8PvEtHL7cB20OcaZUN8YtZIheA6je5H0z-CiX3kktfbMOCnuaKsgnb6oGATvD3LfvBfCdrNPmMQ5j6trel6WTqrJorL0SxSUbrjPRBfx152QDaTE1HBlR5_0xpxj7i2nqIyGsQGoi6N1GwpZZkJppigJT-ohD7QdBhBVQoeDcNJe2OFthL9rvzgeiu_roe3682ovwRmwL0iFHxZzxzO6fRZ5SSAq1OGnGhEpUeBJzSuGK-QyCKQZyYeyCK1hjbeuxNfILRMLRj0BvRX7dDct5uCo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8010/api/vehicles/14",
+					"host": [
+						"localhost"
+					],
+					"port": "8010",
+					"path": [
+						"api",
+						"vehicles",
+						"14"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/films",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMzhlZWQxM2ZkZGQ0MmY2ZjUzNTA0MTQ4YTUyY2QwODE5M2JiNzlmNTU2ZjY1OWVkODlmZDUxZDFiZDE4Njk3NDcxMDI1OTMzM2Y1YTNhNDAiLCJpYXQiOiIxNjA2NzgzMDE2LjcwODYxNSIsIm5iZiI6IjE2MDY3ODMwMTYuNzA4NjE4IiwiZXhwIjoiMTYzODMxOTAxNi42OTkyMDMiLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.LJ5UQfRkD1lBiQnwrVDc3p01t9R4aSKwfub4HoUi5xfcN6AkVV-1VLLtRpU9n0aDDRoTTqi87K7Eibsp0wP0dEvqUXcXefc1PWWb7jtu-LS7Ahmb6mgzZHm4sGQ5uVv1hAb9jxs-iqtNWTLUVwBxBjwUVPOwu8sGN9pdu929vBOyUWB8aUyasMe0yvkwal2YZJpGrMPixds0QbPq900mwzMl7Rit1Si3g1f1DyZUXwzb3mIeHac-Ia-nVOan65ZXc7GAnh3Po9hGnHI_weFMDMckEUK6yrmlx8HAKLiCB2sDDlduuEN79EJT7_eU3km564sMq-YuM1VyXc5t8VAG7zzAAEjFjCk0_LyjNTH7xVj1u5F5KoyIP8p5-Xbdm_em49xqHshkKOn4fiMRHy-8PvEtHL7cB20OcaZUN8YtZIheA6je5H0z-CiX3kktfbMOCnuaKsgnb6oGATvD3LfvBfCdrNPmMQ5j6trel6WTqrJorL0SxSUbrjPRBfx152QDaTE1HBlR5_0xpxj7i2nqIyGsQGoi6N1GwpZZkJppigJT-ohD7QdBhBVQoeDcNJe2OFthL9rvzgeiu_roe3682ovwRmwL0iFHxZzxzO6fRZ5SSAq1OGnGhEpUeBJzSuGK-QyCKQZyYeyCK1hjbeuxNfILRMLRj0BvRX7dDct5uCo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Requested-With",
+						"type": "text",
+						"value": "XMLHttpRequest"
+					}
+				],
+				"url": {
+					"raw": "localhost:8010/api/films",
+					"host": [
+						"localhost"
+					],
+					"port": "8010",
+					"path": [
+						"api",
+						"films"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/films/{id}",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMzhlZWQxM2ZkZGQ0MmY2ZjUzNTA0MTQ4YTUyY2QwODE5M2JiNzlmNTU2ZjY1OWVkODlmZDUxZDFiZDE4Njk3NDcxMDI1OTMzM2Y1YTNhNDAiLCJpYXQiOiIxNjA2NzgzMDE2LjcwODYxNSIsIm5iZiI6IjE2MDY3ODMwMTYuNzA4NjE4IiwiZXhwIjoiMTYzODMxOTAxNi42OTkyMDMiLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.LJ5UQfRkD1lBiQnwrVDc3p01t9R4aSKwfub4HoUi5xfcN6AkVV-1VLLtRpU9n0aDDRoTTqi87K7Eibsp0wP0dEvqUXcXefc1PWWb7jtu-LS7Ahmb6mgzZHm4sGQ5uVv1hAb9jxs-iqtNWTLUVwBxBjwUVPOwu8sGN9pdu929vBOyUWB8aUyasMe0yvkwal2YZJpGrMPixds0QbPq900mwzMl7Rit1Si3g1f1DyZUXwzb3mIeHac-Ia-nVOan65ZXc7GAnh3Po9hGnHI_weFMDMckEUK6yrmlx8HAKLiCB2sDDlduuEN79EJT7_eU3km564sMq-YuM1VyXc5t8VAG7zzAAEjFjCk0_LyjNTH7xVj1u5F5KoyIP8p5-Xbdm_em49xqHshkKOn4fiMRHy-8PvEtHL7cB20OcaZUN8YtZIheA6je5H0z-CiX3kktfbMOCnuaKsgnb6oGATvD3LfvBfCdrNPmMQ5j6trel6WTqrJorL0SxSUbrjPRBfx152QDaTE1HBlR5_0xpxj7i2nqIyGsQGoi6N1GwpZZkJppigJT-ohD7QdBhBVQoeDcNJe2OFthL9rvzgeiu_roe3682ovwRmwL0iFHxZzxzO6fRZ5SSAq1OGnGhEpUeBJzSuGK-QyCKQZyYeyCK1hjbeuxNfILRMLRj0BvRX7dDct5uCo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Requested-With",
+						"type": "text",
+						"value": "XMLHttpRequest"
+					}
+				],
+				"url": {
+					"raw": "localhost:8010/api/films/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8010",
+					"path": [
+						"api",
+						"films",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/planets",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMzhlZWQxM2ZkZGQ0MmY2ZjUzNTA0MTQ4YTUyY2QwODE5M2JiNzlmNTU2ZjY1OWVkODlmZDUxZDFiZDE4Njk3NDcxMDI1OTMzM2Y1YTNhNDAiLCJpYXQiOiIxNjA2NzgzMDE2LjcwODYxNSIsIm5iZiI6IjE2MDY3ODMwMTYuNzA4NjE4IiwiZXhwIjoiMTYzODMxOTAxNi42OTkyMDMiLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.LJ5UQfRkD1lBiQnwrVDc3p01t9R4aSKwfub4HoUi5xfcN6AkVV-1VLLtRpU9n0aDDRoTTqi87K7Eibsp0wP0dEvqUXcXefc1PWWb7jtu-LS7Ahmb6mgzZHm4sGQ5uVv1hAb9jxs-iqtNWTLUVwBxBjwUVPOwu8sGN9pdu929vBOyUWB8aUyasMe0yvkwal2YZJpGrMPixds0QbPq900mwzMl7Rit1Si3g1f1DyZUXwzb3mIeHac-Ia-nVOan65ZXc7GAnh3Po9hGnHI_weFMDMckEUK6yrmlx8HAKLiCB2sDDlduuEN79EJT7_eU3km564sMq-YuM1VyXc5t8VAG7zzAAEjFjCk0_LyjNTH7xVj1u5F5KoyIP8p5-Xbdm_em49xqHshkKOn4fiMRHy-8PvEtHL7cB20OcaZUN8YtZIheA6je5H0z-CiX3kktfbMOCnuaKsgnb6oGATvD3LfvBfCdrNPmMQ5j6trel6WTqrJorL0SxSUbrjPRBfx152QDaTE1HBlR5_0xpxj7i2nqIyGsQGoi6N1GwpZZkJppigJT-ohD7QdBhBVQoeDcNJe2OFthL9rvzgeiu_roe3682ovwRmwL0iFHxZzxzO6fRZ5SSAq1OGnGhEpUeBJzSuGK-QyCKQZyYeyCK1hjbeuxNfILRMLRj0BvRX7dDct5uCo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Requested-With",
+						"type": "text",
+						"value": "XMLHttpRequest"
+					}
+				],
+				"url": {
+					"raw": "localhost:8010/api/planets",
+					"host": [
+						"localhost"
+					],
+					"port": "8010",
+					"path": [
+						"api",
+						"planets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/planets/{id}",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMzhlZWQxM2ZkZGQ0MmY2ZjUzNTA0MTQ4YTUyY2QwODE5M2JiNzlmNTU2ZjY1OWVkODlmZDUxZDFiZDE4Njk3NDcxMDI1OTMzM2Y1YTNhNDAiLCJpYXQiOiIxNjA2NzgzMDE2LjcwODYxNSIsIm5iZiI6IjE2MDY3ODMwMTYuNzA4NjE4IiwiZXhwIjoiMTYzODMxOTAxNi42OTkyMDMiLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.LJ5UQfRkD1lBiQnwrVDc3p01t9R4aSKwfub4HoUi5xfcN6AkVV-1VLLtRpU9n0aDDRoTTqi87K7Eibsp0wP0dEvqUXcXefc1PWWb7jtu-LS7Ahmb6mgzZHm4sGQ5uVv1hAb9jxs-iqtNWTLUVwBxBjwUVPOwu8sGN9pdu929vBOyUWB8aUyasMe0yvkwal2YZJpGrMPixds0QbPq900mwzMl7Rit1Si3g1f1DyZUXwzb3mIeHac-Ia-nVOan65ZXc7GAnh3Po9hGnHI_weFMDMckEUK6yrmlx8HAKLiCB2sDDlduuEN79EJT7_eU3km564sMq-YuM1VyXc5t8VAG7zzAAEjFjCk0_LyjNTH7xVj1u5F5KoyIP8p5-Xbdm_em49xqHshkKOn4fiMRHy-8PvEtHL7cB20OcaZUN8YtZIheA6je5H0z-CiX3kktfbMOCnuaKsgnb6oGATvD3LfvBfCdrNPmMQ5j6trel6WTqrJorL0SxSUbrjPRBfx152QDaTE1HBlR5_0xpxj7i2nqIyGsQGoi6N1GwpZZkJppigJT-ohD7QdBhBVQoeDcNJe2OFthL9rvzgeiu_roe3682ovwRmwL0iFHxZzxzO6fRZ5SSAq1OGnGhEpUeBJzSuGK-QyCKQZyYeyCK1hjbeuxNfILRMLRj0BvRX7dDct5uCo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Requested-With",
+						"type": "text",
+						"value": "XMLHttpRequest"
+					}
+				],
+				"url": {
+					"raw": "localhost:8010/api/planets/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8010",
+					"path": [
+						"api",
+						"planets",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/starships",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMzhlZWQxM2ZkZGQ0MmY2ZjUzNTA0MTQ4YTUyY2QwODE5M2JiNzlmNTU2ZjY1OWVkODlmZDUxZDFiZDE4Njk3NDcxMDI1OTMzM2Y1YTNhNDAiLCJpYXQiOiIxNjA2NzgzMDE2LjcwODYxNSIsIm5iZiI6IjE2MDY3ODMwMTYuNzA4NjE4IiwiZXhwIjoiMTYzODMxOTAxNi42OTkyMDMiLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.LJ5UQfRkD1lBiQnwrVDc3p01t9R4aSKwfub4HoUi5xfcN6AkVV-1VLLtRpU9n0aDDRoTTqi87K7Eibsp0wP0dEvqUXcXefc1PWWb7jtu-LS7Ahmb6mgzZHm4sGQ5uVv1hAb9jxs-iqtNWTLUVwBxBjwUVPOwu8sGN9pdu929vBOyUWB8aUyasMe0yvkwal2YZJpGrMPixds0QbPq900mwzMl7Rit1Si3g1f1DyZUXwzb3mIeHac-Ia-nVOan65ZXc7GAnh3Po9hGnHI_weFMDMckEUK6yrmlx8HAKLiCB2sDDlduuEN79EJT7_eU3km564sMq-YuM1VyXc5t8VAG7zzAAEjFjCk0_LyjNTH7xVj1u5F5KoyIP8p5-Xbdm_em49xqHshkKOn4fiMRHy-8PvEtHL7cB20OcaZUN8YtZIheA6je5H0z-CiX3kktfbMOCnuaKsgnb6oGATvD3LfvBfCdrNPmMQ5j6trel6WTqrJorL0SxSUbrjPRBfx152QDaTE1HBlR5_0xpxj7i2nqIyGsQGoi6N1GwpZZkJppigJT-ohD7QdBhBVQoeDcNJe2OFthL9rvzgeiu_roe3682ovwRmwL0iFHxZzxzO6fRZ5SSAq1OGnGhEpUeBJzSuGK-QyCKQZyYeyCK1hjbeuxNfILRMLRj0BvRX7dDct5uCo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Requested-With",
+						"type": "text",
+						"value": "XMLHttpRequest"
+					}
+				],
+				"url": {
+					"raw": "localhost:8010/api/starships",
+					"host": [
+						"localhost"
+					],
+					"port": "8010",
+					"path": [
+						"api",
+						"starships"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/starships/{id}",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMzhlZWQxM2ZkZGQ0MmY2ZjUzNTA0MTQ4YTUyY2QwODE5M2JiNzlmNTU2ZjY1OWVkODlmZDUxZDFiZDE4Njk3NDcxMDI1OTMzM2Y1YTNhNDAiLCJpYXQiOiIxNjA2NzgzMDE2LjcwODYxNSIsIm5iZiI6IjE2MDY3ODMwMTYuNzA4NjE4IiwiZXhwIjoiMTYzODMxOTAxNi42OTkyMDMiLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.LJ5UQfRkD1lBiQnwrVDc3p01t9R4aSKwfub4HoUi5xfcN6AkVV-1VLLtRpU9n0aDDRoTTqi87K7Eibsp0wP0dEvqUXcXefc1PWWb7jtu-LS7Ahmb6mgzZHm4sGQ5uVv1hAb9jxs-iqtNWTLUVwBxBjwUVPOwu8sGN9pdu929vBOyUWB8aUyasMe0yvkwal2YZJpGrMPixds0QbPq900mwzMl7Rit1Si3g1f1DyZUXwzb3mIeHac-Ia-nVOan65ZXc7GAnh3Po9hGnHI_weFMDMckEUK6yrmlx8HAKLiCB2sDDlduuEN79EJT7_eU3km564sMq-YuM1VyXc5t8VAG7zzAAEjFjCk0_LyjNTH7xVj1u5F5KoyIP8p5-Xbdm_em49xqHshkKOn4fiMRHy-8PvEtHL7cB20OcaZUN8YtZIheA6je5H0z-CiX3kktfbMOCnuaKsgnb6oGATvD3LfvBfCdrNPmMQ5j6trel6WTqrJorL0SxSUbrjPRBfx152QDaTE1HBlR5_0xpxj7i2nqIyGsQGoi6N1GwpZZkJppigJT-ohD7QdBhBVQoeDcNJe2OFthL9rvzgeiu_roe3682ovwRmwL0iFHxZzxzO6fRZ5SSAq1OGnGhEpUeBJzSuGK-QyCKQZyYeyCK1hjbeuxNfILRMLRj0BvRX7dDct5uCo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Requested-With",
+						"type": "text",
+						"value": "XMLHttpRequest"
+					}
+				],
+				"url": {
+					"raw": "localhost:8010/api/starships/22",
+					"host": [
+						"localhost"
+					],
+					"port": "8010",
+					"path": [
+						"api",
+						"starships",
+						"22"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/species",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMzhlZWQxM2ZkZGQ0MmY2ZjUzNTA0MTQ4YTUyY2QwODE5M2JiNzlmNTU2ZjY1OWVkODlmZDUxZDFiZDE4Njk3NDcxMDI1OTMzM2Y1YTNhNDAiLCJpYXQiOiIxNjA2NzgzMDE2LjcwODYxNSIsIm5iZiI6IjE2MDY3ODMwMTYuNzA4NjE4IiwiZXhwIjoiMTYzODMxOTAxNi42OTkyMDMiLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.LJ5UQfRkD1lBiQnwrVDc3p01t9R4aSKwfub4HoUi5xfcN6AkVV-1VLLtRpU9n0aDDRoTTqi87K7Eibsp0wP0dEvqUXcXefc1PWWb7jtu-LS7Ahmb6mgzZHm4sGQ5uVv1hAb9jxs-iqtNWTLUVwBxBjwUVPOwu8sGN9pdu929vBOyUWB8aUyasMe0yvkwal2YZJpGrMPixds0QbPq900mwzMl7Rit1Si3g1f1DyZUXwzb3mIeHac-Ia-nVOan65ZXc7GAnh3Po9hGnHI_weFMDMckEUK6yrmlx8HAKLiCB2sDDlduuEN79EJT7_eU3km564sMq-YuM1VyXc5t8VAG7zzAAEjFjCk0_LyjNTH7xVj1u5F5KoyIP8p5-Xbdm_em49xqHshkKOn4fiMRHy-8PvEtHL7cB20OcaZUN8YtZIheA6je5H0z-CiX3kktfbMOCnuaKsgnb6oGATvD3LfvBfCdrNPmMQ5j6trel6WTqrJorL0SxSUbrjPRBfx152QDaTE1HBlR5_0xpxj7i2nqIyGsQGoi6N1GwpZZkJppigJT-ohD7QdBhBVQoeDcNJe2OFthL9rvzgeiu_roe3682ovwRmwL0iFHxZzxzO6fRZ5SSAq1OGnGhEpUeBJzSuGK-QyCKQZyYeyCK1hjbeuxNfILRMLRj0BvRX7dDct5uCo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Requested-With",
+						"type": "text",
+						"value": "XMLHttpRequest"
+					}
+				],
+				"url": {
+					"raw": "localhost:8010/api/species",
+					"host": [
+						"localhost"
+					],
+					"port": "8010",
+					"path": [
+						"api",
+						"species"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/species/{id}",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMzhlZWQxM2ZkZGQ0MmY2ZjUzNTA0MTQ4YTUyY2QwODE5M2JiNzlmNTU2ZjY1OWVkODlmZDUxZDFiZDE4Njk3NDcxMDI1OTMzM2Y1YTNhNDAiLCJpYXQiOiIxNjA2NzgzMDE2LjcwODYxNSIsIm5iZiI6IjE2MDY3ODMwMTYuNzA4NjE4IiwiZXhwIjoiMTYzODMxOTAxNi42OTkyMDMiLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.LJ5UQfRkD1lBiQnwrVDc3p01t9R4aSKwfub4HoUi5xfcN6AkVV-1VLLtRpU9n0aDDRoTTqi87K7Eibsp0wP0dEvqUXcXefc1PWWb7jtu-LS7Ahmb6mgzZHm4sGQ5uVv1hAb9jxs-iqtNWTLUVwBxBjwUVPOwu8sGN9pdu929vBOyUWB8aUyasMe0yvkwal2YZJpGrMPixds0QbPq900mwzMl7Rit1Si3g1f1DyZUXwzb3mIeHac-Ia-nVOan65ZXc7GAnh3Po9hGnHI_weFMDMckEUK6yrmlx8HAKLiCB2sDDlduuEN79EJT7_eU3km564sMq-YuM1VyXc5t8VAG7zzAAEjFjCk0_LyjNTH7xVj1u5F5KoyIP8p5-Xbdm_em49xqHshkKOn4fiMRHy-8PvEtHL7cB20OcaZUN8YtZIheA6je5H0z-CiX3kktfbMOCnuaKsgnb6oGATvD3LfvBfCdrNPmMQ5j6trel6WTqrJorL0SxSUbrjPRBfx152QDaTE1HBlR5_0xpxj7i2nqIyGsQGoi6N1GwpZZkJppigJT-ohD7QdBhBVQoeDcNJe2OFthL9rvzgeiu_roe3682ovwRmwL0iFHxZzxzO6fRZ5SSAq1OGnGhEpUeBJzSuGK-QyCKQZyYeyCK1hjbeuxNfILRMLRj0BvRX7dDct5uCo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Requested-With",
+						"type": "text",
+						"value": "XMLHttpRequest"
+					}
+				],
+				"url": {
+					"raw": "localhost:8010/api/species/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8010",
+					"path": [
+						"api",
+						"species",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "",
+				"type": "string"
+			}
+		]
+	},
+	"protocolProfileBehavior": {}
+}

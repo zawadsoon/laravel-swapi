@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 
 class DatabaseSeeder extends Seeder
 {
@@ -18,6 +19,14 @@ class DatabaseSeeder extends Seeder
             'personal_access_client' => 0,
             'password_client' => config('auth.passport.client_id'),
             'revoked' => 0,
+        ]);
+
+        DB::table('users')->insert([
+            'name' => null,
+            'email' => "marcin@swapi.com",
+            'email_verified_at' => null,
+            'hero_id' => 1,
+            'password' => Hash::make('password')
         ]);
     }
 }
