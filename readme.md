@@ -13,5 +13,5 @@
 [x] verify if resource belongs to hero
 [x] cache interface and cache implementation (should cache every resource from SW for 24 Hours)
 [x] Add console command that list user with assigned hero
-[x] Make endpoints documentation 
-[ ] Run local environment with Docker Compose (wtf is that?)
+[x] Make endpoints documentation (I used Postaman, see api-doc/)
+[x] Run local environment with Docker Compose (wtf is that?) 
