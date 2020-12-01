@@ -2,7 +2,12 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\FilmController;
+use App\Http\Controllers\PlanetController;
+use App\Http\Controllers\SpeciesController;
+use App\Http\Controllers\StarShipController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\VehicleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,4 +25,14 @@ Route::post('signin', [AuthController::class, 'signin']);
 
 Route::middleware('auth:api')->group(function () {
     Route::put('users/me', [UserController::class, 'updateMe']);
+    Route::get('films', [FilmController::class, 'getFilmsAssociatedWithCurrentUser']);
+    Route::get('films/{id}', [FilmController::class, 'getFilmById']);
+    Route::get('planets', [PlanetController::class, 'getPlanetsAssociatedWithCurrentUser']);
+    Route::get('planets/{id}', [PlanetController::class, 'getPlanetById']);
+    Route::get('starships', [StarShipController::class, 'getStarShipsAssociatedWithCurrentUser']);
+    Route::get('starships/{id}', [StarShipController::class, 'getStarShipById']);
+    Route::get('species', [SpeciesController::class, 'getSpeciesAssociatedWithCurrentUser']);
+    Route::get('species/{id}', [SpeciesController::class, 'getSpeciesById']);
+    Route::get('vehicles', [VehicleController::class, 'getVehiclesAssociatedWithCurrentUser']);
+    Route::get('vehicles/{id}', [VehicleController::class, 'getVehicleById']);
 });

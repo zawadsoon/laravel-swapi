@@ -10,7 +10,7 @@ class AttachRandomHeroToUser
 
     public function __construct(SwapiRepositoryContract $swapiRepository)
     {
-        $this->$swapiRepository = $swapiRepository;
+        $this->swapiRepository = $swapiRepository;
     }
 
     public function handle($event): void
